@@ -23,11 +23,11 @@
  <div class="off-canvas-wrapper">
 <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
  <ul class=" menu vertical text-center" data-magellan>
-        <li><a href="#boda">Wedding</a></li>
-        <li><a href="#hospedaje">Hotels</a></li>
-        <li><a href="#mesa">Registry</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#rsvp">RSVP</a></li>
+        <li><a class="cerrar" href="#boda">Wedding</a></li>
+        <li><a class="cerrar" href="#hospedaje">Hotels</a></li>
+        <li><a class="cerrar" href="#mesa">Registry</a></li>
+        <li><a class="cerrar" href="#faq">FAQ</a></li>
+        <li><a class="cerrar" href="#rsvp">RSVP</a></li>
         <li><a href="index.html">ESPAÑOL</a></li>
 
       </ul>
@@ -46,7 +46,7 @@
         <li class="show-for-medium"><a href="#faq">FAQ</a></li>
         <li class="show-for-medium"><a href="#rsvp">RSVP</a></li>
         <li class="show-for-medium"><a href="index.html">ES</a></li>
-        <li class="show-for-small-only"><button type="button" class="menu-icon" data-toggle="offCanvas"></button> </li>
+        <li class="show-for-small-only"><button type="button" id="offToggle" class="menu-icon" data-toggle="offCanvas"></button> </li>
       </ul>
 
     </div>
@@ -319,7 +319,14 @@
 <script src="js/vendor/ouical.js"></script>
 <script src="js/scripts.js"></script>
 <script>
+
   $(document).ready(function () {
+
+    $('.cerrar').on('click', function () {
+      $('#offToggle').click()
+    });
+
+
 
     $(window).scroll(function () {
 
@@ -329,7 +336,7 @@
 
       if (window_top > div_top) {
         $('#menu').addClass('difference');
-        console.log("hey");
+
       } else {
         $('#menu').removeClass('difference');
       }
