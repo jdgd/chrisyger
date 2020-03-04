@@ -1,0 +1,286 @@
+
+
+.tbpad {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+section,
+.texto-blanco {
+  color: white;
+}
+
+p {
+  font-size: 1.1rem;
+  letter-spacing: 0.03rem;
+}
+
+.texto-negro {
+  color: #0a0a0a;
+}
+
+.menu > li > a {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.menu > li > a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.difference {
+  mix-blend-mode: difference;
+}
+.rsvp-btn{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+label{
+   color: #91362C;
+}
+.alert:hover{
+  color: #91362C;
+  border-color: #91362C;
+}
+#menu {
+  color: white;
+
+}
+ol{
+  color: #0a0a0a;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+ol >li >p{
+  font-weight: normal;
+}
+.responsive-embed {
+  height: 100%;
+  padding-bottom: 0;
+}
+
+#boda {
+  color: #0a0a0a;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.padding-1{
+  padding: 1rem;
+}
+
+#mapa {
+  height: 100%;
+}
+
+#sobre {
+  background: url('../img/PAG_BODA-03.png') center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 500px;
+}
+#sobre-en {
+  background: url('../img/PAG_BODA-03_en.png') center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 500px;
+}
+
+
+
+#top-section {
+  background: url('../img/PAG_BODA-13.png') center center fixed no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 1rem
+}
+#rsvpModal{
+  background: #F0E5DC;
+}
+#rsvp {
+  position: relative;
+  background: url('../img/PAG_BODA-05.png') right center fixed no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+
+#rsvp-content {
+  padding-bottom: 6rem;
+  padding-left: 9rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#top-text {
+  padding-top: 1rem;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+.vestimenta{
+
+  background: #F0E5DC;
+
+}
+.texto-narnja{
+  color: #D88880;
+}
+
+.vhr{
+    border:         none;
+    border-left:    1px solid #D88880;
+    height:         2.5rem;
+    width:          2px;
+}
+#hash{
+  font-weight: bold;
+  position: absolute;
+  letter-spacing: 0.2em;
+  color: white;
+  top:20rem;
+  left: 3rem;
+  transform: rotate(-90deg);
+  transform-origin: top left;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+
+.animate{
+  transition: 1.5s; /* THE DURATION */
+}
+.menu.vertical>li>a{
+  color: #D88880;
+}
+#imagen-arco{
+  background: url("../img/PAG_BODA-04.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+
+  #hash{
+  top:17rem;
+  left: 1rem;
+
+}
+  #top-text {
+    padding-top: 0;
+  }
+
+  #sobre {
+    background: url('../img/PAG_BODA-03.png') left center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: auto;
+
+  }
+    #sobre-en {
+    background: url('../img/PAG_BODA-03_en.png') left center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: auto;
+
+  }
+
+  #rsvp {
+
+    background: url('../img/PAG_BODA-0523.png') center center fixed no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  #rsvp-content {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 2rem;
+    padding-left: 0;
+  }
+
+#imagen-arco{
+  min-height: 100vh;
+}
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+  #vest-m{
+  border-right: 1px solid #D88880;
+}
+
+  #mapa {
+    height: 275px;
+  }
+
+  .responsive-embed {
+    height: 275px !important;
+  }
+
+  .sobre-content {
+  position: relative;
+  height: 500px;
+
+}
+
+.sobre-content > div {
+ position: absolute;
+  /*top: 50%;*/
+  height: 150px;
+  /*margin-top: -50px;*/
+  text-align: left;
+  /*vertical-align: middle;*/
+   top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+}
