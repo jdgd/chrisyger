@@ -82,7 +82,7 @@ ol >li >p{
 }
 
 #sobre {
-  background: url('../img/PAG_BODA-03.png') center center no-repeat;
+  background: url('../img/PAG_BODA-03.jpg') center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -90,7 +90,7 @@ ol >li >p{
   height: 500px;
 }
 #sobre-en {
-  background: url('../img/PAG_BODA-03_en.png') center center no-repeat;
+  background: url('../img/PAG_BODA-03_en.jpg') center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -101,7 +101,7 @@ ol >li >p{
 
 
 #top-section {
-  background: url('../img/PAG_BODA-13.png') center center fixed no-repeat;
+  background: url('../img/PAG_BODA-13.jpg') center center fixed no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -114,7 +114,7 @@ ol >li >p{
 }
 #rsvp {
   position: relative;
-  background: url('../img/PAG_BODA-05.png') right center fixed no-repeat;
+  background: url('../img/PAG_BODA-05.jpg') right center fixed no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -178,7 +178,7 @@ ol >li >p{
   color: #D88880;
 }
 #imagen-arco{
-  background: url("../img/PAG_BODA-04.png") no-repeat center center fixed;
+  background: url("../img/PAG_BODA-04.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -198,7 +198,7 @@ ol >li >p{
   }
 
   #sobre {
-    background: url('../img/PAG_BODA-03.png') left center no-repeat;
+    background: url('../img/PAG_BODA-03.jpg') left center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -207,7 +207,7 @@ ol >li >p{
 
   }
     #sobre-en {
-    background: url('../img/PAG_BODA-03_en.png') left center no-repeat;
+    background: url('../img/PAG_BODA-03_en.jpg') left center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
