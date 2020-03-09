@@ -42,7 +42,8 @@ p {
 }
 
 label{
-   color: #91362C;
+   color: white;
+  font-weight: bold;
 }
 .alert:hover{
   color: #91362C;
@@ -82,7 +83,7 @@ ol >li >p{
 }
 
 #sobre {
-  background: url('../img/PAG_BODA-03.jpg') center center no-repeat;
+  background: #A56051 url('../img/PAG_BODA-03.jpg') center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -90,7 +91,7 @@ ol >li >p{
   height: 500px;
 }
 #sobre-en {
-  background: url('../img/PAG_BODA-03_en.jpg') center center no-repeat;
+  background: #A56051 url('../img/PAG_BODA-03_en.jpg') center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -101,7 +102,7 @@ ol >li >p{
 
 
 #top-section {
-  background: url('../img/PAG_BODA-13.jpg') center center fixed no-repeat;
+  background: #bababb url('../img/PAG_BODA-13.jpg') no-repeat fixed center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -110,11 +111,13 @@ ol >li >p{
   padding-top: 1rem
 }
 #rsvpModal{
-  background: #F0E5DC;
+  background: #A56051 url("../img/texture-1.png");
 }
+
+
 #rsvp {
   position: relative;
-  background: url('../img/PAG_BODA-05.jpg') right center fixed no-repeat;
+  background: #CAEFFB url('../img/PAG_BODA-05.jpg') right center fixed no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -175,16 +178,20 @@ ol >li >p{
   transition: 1.5s; /* THE DURATION */
 }
 .menu.vertical>li>a{
-  color: #D88880;
+  color: white;
 }
 #imagen-arco{
-  background: url("../img/PAG_BODA-04.jpg") no-repeat center center fixed;
+  background: #6F634B url("../img/PAG_BODA-04.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
+
+.off-canvas{
+  background-image: url("../img/texture-1.png");
+}
 /* Small only */
 @media screen and (max-width: 39.9375em) {
 
@@ -198,7 +205,7 @@ ol >li >p{
   }
 
   #sobre {
-    background: url('../img/PAG_BODA-03.jpg') left center no-repeat;
+    background: #A56051 url('../img/PAG_BODA-03.jpg') left center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -207,7 +214,7 @@ ol >li >p{
 
   }
     #sobre-en {
-    background: url('../img/PAG_BODA-03_en.jpg') left center no-repeat;
+    background: #A56051 url('../img/PAG_BODA-03_en.jpg') left center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -218,7 +225,7 @@ ol >li >p{
 
   #rsvp {
 
-    background: url('../img/PAG_BODA-0523.png') center center fixed no-repeat;
+    background: #CAEFFB url('../img/PAG_BODA-0523.png') center center fixed no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

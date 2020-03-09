@@ -23,6 +23,11 @@
 <body>
 <div class="off-canvas-wrapper">
   <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+
+    <div class="text-center">
+
+      <img src="img/CG-02.png" alt="" style="max-width: 60%;">
+    </div>
     <ul class=" menu vertical text-center" data-magellan>
       <li><a class="cerrar" href="#boda">Boda</a></li>
       <li><a class="cerrar" href="#hospedaje">Hospedaje</a></li>
@@ -33,9 +38,10 @@
 
     </ul>
     <hr>
-    <p class="text-center texto-narnja">#CRISYGER2020</p>
+    <p class="text-center texto-blanco">#CRISYGER2020</p>
   </div>
   <div class="off-canvas-content" data-off-canvas-content>
+
 
     <div class="text-center" id="top-section">
       <div data-sticky-container>
@@ -275,8 +281,11 @@
 
 
     <div class="reveal padding-1 bold" id="rsvpModal" data-reveal>
-      <p class="lead text-center texto-narnja bold">
-        Confirma tu asistencia
+      <p class="lead text-center texto-blanco bold">
+        Confirma tu asistencia!
+      </p>
+      <p class="texto-blanco text-center bold">
+          Nos ayudarías mucho que fuera antes del 1 de Septiembre de 2020.
       </p>
       <form id="rsvp-form" class="rsvp-form"
             action=""
@@ -305,9 +314,9 @@
             </label>
           </div>
         </div>
+<br>
 
-
-        <button class="expanded button hollow alert no-margin rsvp-btn">
+        <button class="expanded button hollow secondary no-margin rsvp-btn">
           Confirmar
         </button>
       </form>
@@ -325,11 +334,9 @@
 <script src="js/scripts.js"></script>
 <script>
   $(document).ready(function () {
-     $('.cerrar').on('click', function () {
+    $('.cerrar').on('click', function () {
       $('#offToggle').click()
     });
-
-
 
 
     $(window).scroll(function () {
