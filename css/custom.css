@@ -108,7 +108,11 @@ ol >li >p{
   -o-background-size: cover;
   background-size: cover;
   min-height: 100vh;
-  padding-top: 1rem
+  padding-top: 1rem;
+     top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
 }
 #rsvpModal{
   background: #A56051 url("../img/texture-1.png");
@@ -123,6 +127,10 @@ ol >li >p{
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
+   top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
 }
 
 #rsvp-content {
