@@ -1,8 +1,8 @@
 
 
 .tbpad {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .bold {
@@ -79,6 +79,7 @@ ol >li >p{
 }
 
 #mapa {
+  margin-top: 8rem;
   height: 100%;
 }
 
@@ -121,7 +122,7 @@ ol >li >p{
 
 #rsvp {
   position: relative;
-  background: #CAEFFB url('../img/PAG_BODA-05.jpg') right center fixed no-repeat;
+  background: #CAEFFB url('../img/fotofinalc.jpg') right center fixed no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -200,9 +201,15 @@ ol >li >p{
 .off-canvas{
   background-image: url("../img/texture-1.png");
 }
+
+ .firmas{
+    max-width: 450px;
+  }
 /* Small only */
 @media screen and (max-width: 39.9375em) {
-
+  .firmas{
+    max-width: 360px;
+  }
   #hash{
   top:17rem;
   left: 1rem;
@@ -233,7 +240,7 @@ ol >li >p{
 
   #rsvp {
 
-    background: #CAEFFB url('../img/PAG_BODA-0523.png') center center fixed no-repeat;
+    background: #CAEFFB url('../img/fotofinalm2.jpg') center center fixed no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
