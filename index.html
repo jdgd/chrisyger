@@ -304,19 +304,23 @@
       <section id="rsvp" data-magellan-target="rsvp">
         <p id="hash">#CRISYGER2021</p>
 
+      </section>
+      <section>
         <div id="rsvp-content">
+
           <img alt="" src="img/cyg.png" class="firmas"><br><br>
           <div style="text-transform: uppercase; line-height: 42px; height: 42px; display: inline-block">
             ¡Nos vemos pronto!
           </div>
-          <button type="button" class="button hollow secondary no-margin" data-open="rsvpModal">RSVP</button>
+          <button type="button" class="button hollow secondary no-margin" data-open="rsvpModal" id="btn-rsvp">RSVP
+          </button>
 
         </div>
       </section>
     </div>
 
 
-    <div class="reveal padding-1 bold" id="rsvpModal" data-reveal>
+    <div class="reveal large padding-1 bold" id="rsvpModal" data-reveal>
       <p class="lead text-center texto-blanco bold">
         Confirma tu asistencia!
       </p>
@@ -326,28 +330,36 @@
       <form id="rsvp-form" class="rsvp-form"
             action=""
             method="POST" novalidate data-abide>
-        <div class="grid-x grid-padding-x">
-          <div class="cell medium-6">
+        <div class="grid-x grid-padding-x large-up-2 align-center">
+          <div class="cell">
             <label>Nombre
               <input type="text" name="name" class="" placeholder="" required>
             </label>
 
           </div>
-          <div class="cell medium-6">
+          <div class="cell">
             <label>e-mail
-              <input type="email" name="email" class="" pattern="email" placeholder="Your email" required>
+              <input type="email" name="email" class="" pattern="email" placeholder="" required>
             </label>
           </div>
-          <div class="cell medium-6">
+          <div class="cell">
             <label>Personas
-              <input type="number" name="extras" class="" min="0" max="4" placeholder="Husband/Wife or kids" required>
+              <input type="number" name="extras" class="" min="0" max="4" placeholder="" required>
             </label>
           </div>
-          <div class="cell medium-6">
+          <div class="cell">
             <label>Código de invitación
-              <input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Invite code"
+              <input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder=""
                      required>
             </label>
+          </div>
+          <div class="cell text-center">
+            <label class="texto-blanco">¿Asistirás?</label>
+            <fieldset>
+              <input type="radio" name="going" value="Si" id="pokemonRed" required><label
+              for="pokemonRed">Si</label>
+              <input type="radio" name="going" value="No" id="pokemonBlue"><label for="pokemonBlue">No</label>
+            </fieldset>
           </div>
         </div>
         <br>
@@ -374,7 +386,6 @@
       $('#offToggle').click()
     });
 
-
     $(window).scroll(function () {
 
       var window_top = $(window).scrollTop();
@@ -383,7 +394,6 @@
 
       if (window_top > div_top) {
         $('#menu').addClass('difference');
-        console.log("hey");
       } else {
         $('#menu').removeClass('difference');
       }
@@ -418,6 +428,10 @@
   }(jQuery, window));
 </script>
 <script>
+
+  $('#rsvp-content, #rsvp').on('click', function () {
+    $('#btn-rsvp').click();
+  })
   window.mobilecheck = function () {
     var check = false;
     (function (a) {

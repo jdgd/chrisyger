@@ -300,16 +300,16 @@ input[type='search'] {
           box-sizing: border-box; }
 
 ::-webkit-input-placeholder {
-  color: #cacaca; }
+  color: #0a0a0a; }
 
 :-ms-input-placeholder {
-  color: #cacaca; }
+  color: #0a0a0a; }
 
 ::-ms-input-placeholder {
-  color: #cacaca; }
+  color: #0a0a0a; }
 
 ::placeholder {
-  color: #cacaca; }
+  color: #0a0a0a; }
 
 [type='file'],
 [type='checkbox'],
