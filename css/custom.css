@@ -1,8 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
+html, body, span, div, li, a, button, label, p {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 600;
+}
 
 .tbpad {
   padding-top: 8rem;
   padding-bottom: 8rem;
+}
+
+label {
+  font-size: 1.1rem !important;
 }
 
 .bold {
@@ -36,31 +50,37 @@ p {
 .difference {
   mix-blend-mode: difference;
 }
-.rsvp-btn{
+
+.rsvp-btn {
   text-transform: uppercase;
   font-weight: bold;
 }
 
-label{
-   color: white;
+label {
+  color: white;
   font-weight: bold;
 }
-.alert:hover{
+
+.alert:hover {
   color: #91362C;
   border-color: #91362C;
 }
+
 #menu {
   color: white;
 
 }
-ol{
+
+ol {
   color: #0a0a0a;
   font-size: 1.1em;
   font-weight: bold;
 }
-ol >li >p{
+
+ol > li > p {
   font-weight: normal;
 }
+
 .responsive-embed {
   height: 100%;
   padding-bottom: 0;
@@ -74,33 +94,33 @@ ol >li >p{
   text-transform: uppercase;
 }
 
-.padding-1{
+.padding-1 {
   padding: 1rem;
 }
 
 #mapa {
-  margin-top: 8rem;
+  margin-top: 0;
   height: 100%;
 }
 
-#sobre {
-  background: #A56051 url('../img/PAG_BODA-03.jpg') center center no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 500px;
-}
-#sobre-en {
-  background: #A56051 url('../img/PAG_BODA-03_en.jpg') center center no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 500px;
-}
 
+  #sobre {
+    background: #A56051 url('../img/nueva_fecha.jpg') left center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: auto;
+  }
 
+  #sobre-en {
+    background: #A56051 url('../img/nueva_fecha.jpg') left center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: auto;
+  }
 
 #top-section {
   background: #bababb url('../img/PAG_BODA-13.jpg') no-repeat fixed center center;
@@ -110,28 +130,29 @@ ol >li >p{
   background-size: cover;
   min-height: 100vh;
   padding-top: 1rem;
-     top: 0;
-    left: 0;
-    width: 100%;
-    z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
 }
-#rsvpModal{
+
+#rsvpModal {
   background: #A56051 url("../img/texture-1.png");
 }
 
 
 #rsvp {
   position: relative;
-  background: #CAEFFB url('../img/fotofinalc.jpg') right center fixed no-repeat;
+  background: linear-gradient(121deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 49%, rgba(255, 255, 255, 0.1) 100%), url('../img/fotofinalc.jpg') right center fixed no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
-   top: 0;
-    left: 0;
-    width: 100%;
-    z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
 }
 
 #rsvp-content {
@@ -153,27 +174,30 @@ ol >li >p{
 .no-padding {
   padding: 0;
 }
-.vestimenta{
+
+.vestimenta {
 
   background: #F0E5DC;
 
 }
-.texto-narnja{
+
+.texto-narnja {
   color: #D88880;
 }
 
-.vhr{
-    border:         none;
-    border-left:    1px solid #D88880;
-    height:         2.5rem;
-    width:          2px;
+.vhr {
+  border: none;
+  border-left: 1px solid #D88880;
+  height: 2.5rem;
+  width: 2px;
 }
-#hash{
+
+#hash {
   font-weight: bold;
   position: absolute;
   letter-spacing: 0.2em;
   color: white;
-  top:20rem;
+  top: 20rem;
   left: 3rem;
   transform: rotate(-90deg);
   transform-origin: top left;
@@ -183,13 +207,15 @@ ol >li >p{
   -o-transform: rotate(-90deg);
 }
 
-.animate{
+.animate {
   transition: 1.5s; /* THE DURATION */
 }
-.menu.vertical>li>a{
+
+.menu.vertical > li > a {
   color: white;
 }
-#imagen-arco{
+
+#imagen-arco {
   background: #6F634B url("../img/PAG_BODA-04.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -198,49 +224,35 @@ ol >li >p{
 }
 
 
-.off-canvas{
+.off-canvas {
   background-image: url("../img/texture-1.png");
 }
 
- .firmas{
-    max-width: 450px;
-  }
+.firmas {
+  max-width: 450px;
+}
+
 /* Small only */
 @media screen and (max-width: 39.9375em) {
-  .firmas{
+
+  .firmas {
     max-width: 360px;
   }
-  #hash{
-  top:17rem;
-  left: 1rem;
 
-}
+  #hash {
+    top: 17rem;
+    left: 1rem;
+
+  }
+
   #top-text {
     padding-top: 0;
   }
 
-  #sobre {
-    background: #A56051 url('../img/PAG_BODA-03.jpg') left center no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: auto;
-
-  }
-    #sobre-en {
-    background: #A56051 url('../img/PAG_BODA-03_en.jpg') left center no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: auto;
-
-  }
 
   #rsvp {
 
-    background: #CAEFFB url('../img/fotofinalm2.jpg') center center fixed no-repeat;
+    background: linear-gradient(121deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url('../img/fotofinalm2.jpg') center center fixed no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -257,16 +269,16 @@ ol >li >p{
     padding-left: 0;
   }
 
-#imagen-arco{
-  min-height: 100vh;
-}
+  #imagen-arco {
+    min-height: 100vh;
+  }
 }
 
 /* Medium and up */
 @media screen and (min-width: 40em) {
-  #vest-m{
-  border-right: 1px solid #D88880;
-}
+  #vest-m {
+    border-right: 1px solid #D88880;
+  }
 
   #mapa {
     height: 275px;
@@ -277,22 +289,22 @@ ol >li >p{
   }
 
   .sobre-content {
-  position: relative;
-  height: 500px;
+    position: relative;
+    height: 500px;
 
-}
+  }
 
-.sobre-content > div {
- position: absolute;
-  /*top: 50%;*/
-  height: 150px;
-  /*margin-top: -50px;*/
-  text-align: left;
-  /*vertical-align: middle;*/
-   top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
+  .sobre-content > div {
+    position: absolute;
+    /*top: 50%;*/
+    height: 150px;
+    /*margin-top: -50px;*/
+    text-align: left;
+    /*vertical-align: middle;*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 /* Medium only */
@@ -301,6 +313,26 @@ ol >li >p{
 
 /* Large and up */
 @media screen and (min-width: 64em) {
+  #mapa {
+    margin-top: 8rem;
+  }
+  #sobre {
+  background: #A56051 url('../img/nueva_fecha.jpg') center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 500px;
+}
+
+#sobre-en {
+  background: #A56051 url('../img/nueva_fecha.jpg') center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 500px;
+}
 }
 
 /* Large only */
