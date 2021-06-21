@@ -104,23 +104,6 @@ ol > li > p {
 }
 
 
-  #sobre {
-    background: #A56051 url('../img/sobre_s.jpg') left center no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: auto;
-  }
-
-  #sobre-en {
-    background: #A56051 url('../img/sobre_s.jpg') left center no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: auto;
-  }
 
 #top-section {
   background: linear-gradient(121deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 49%, rgba(255, 255, 255, 0.1) 100%), url('../img/header.jpg') no-repeat fixed center center;
@@ -279,6 +262,24 @@ ol > li > p {
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
+
+  #sobre {
+    background: #A56051 url('../img/sobre_s.jpg') left center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: auto;
+  }
+
+  #sobre-en {
+    background: #A56051 url('../img/sobre_s.jpg') left center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: auto;
+  }
 
   .firmas {
     max-width: 360px;
