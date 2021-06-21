@@ -67,7 +67,7 @@ $(document).ready(function () {
       alert('wawawah');
     } else {
       $.ajax({
-        url: "https://script.google.com/macros/s/AKfycbwlxOMuvlGN5-L7u-JrlSCBiYh9WafdRNB_eo-rZ1WHseJ9AJgegyJWQwbjWYPxJoLR/exec",
+        url: "https://script.google.com/macros/s/AKfycbwL63-r_7gRbuRXPJH3Np4ATgQA-eGapQkefjJLo0B4deqMbUUe537e2bRLAAvMm8zH/exec",
         data: data,
         async:true,
         dataType : 'jsonp',   //you may use jsonp for cross origin request
