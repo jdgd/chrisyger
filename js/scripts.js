@@ -67,9 +67,9 @@ $(document).ready(function () {
       alert('wawawah');
     } else {
       $.ajax({
-        url: "https://script.google.com/macros/s/AKfycbz45JKZbRzq30z5xxm7ib1skm0C0Au0kObVzhU2pm_6rjAFs_E/exec",
+        url: "https://script.google.com/macros/s/AKfycbwlxOMuvlGN5-L7u-JrlSCBiYh9WafdRNB_eo-rZ1WHseJ9AJgegyJWQwbjWYPxJoLR/exec",
         data: data,
-        method: "GET",
+        method: "POST",
       }).done(function () {
        console.log(data);
           if (data.result === "error") {
