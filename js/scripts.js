@@ -23,35 +23,35 @@ $(document).ready(function () {
 
 
   /********************** Add to Calendar **********************/
-  var myCalendar = createCalendar({
-    options: {
-      class: '',
-      // You can pass an ID. If you don't, one will be generated for you
-      id: ''
-    },
-    data: {
-      // Event title
-      title: "Boda Cristina y Gerardo",
-
-      // Event start date
-      start: new Date('Nov 27, 2021 14:00'),
-
-      // Event duration (IN MINUTES)
-      // duration: 120,
-
-      // You can also choose to set an end time
-      // If an end time is set, this will take precedence over duration
-      // start: new Date('Nov 27, 2021 23:00'),
-
-      // Event Address
-      address: 'Carretera Federal Cuernavaca Cuautla km32, Localidad Los Arcos, Yautepec, Morelos, Mexico',
-
-      // Event Description
-      description: "#crisyger2021"
-    }
-  });
-
-  $('#add-to-cal').html(myCalendar);
+  // var myCalendar = createCalendar({
+  //   options: {
+  //     class: '',
+  //     // You can pass an ID. If you don't, one will be generated for you
+  //     id: ''
+  //   },
+  //   data: {
+  //     // Event title
+  //     title: "Boda Cristina y Gerardo",
+  //
+  //     // Event start date
+  //     start: new Date('Nov 27, 2021 14:00'),
+  //
+  //     // Event duration (IN MINUTES)
+  //     // duration: 120,
+  //
+  //     // You can also choose to set an end time
+  //     // If an end time is set, this will take precedence over duration
+  //     // start: new Date('Nov 27, 2021 23:00'),
+  //
+  //     // Event Address
+  //     address: 'Carretera Federal Cuernavaca Cuautla km32, Localidad Los Arcos, Yautepec, Morelos, Mexico',
+  //
+  //     // Event Description
+  //     description: "#crisyger2021"
+  //   }
+  // });
+  //
+  // $('#add-to-cal').html(myCalendar);
 
 
   /********************** RSVP **********************/
@@ -71,16 +71,16 @@ $(document).ready(function () {
         data: data,
         method: "POST",
       }).success(function () {
-       console.log(data);
+       // console.log(data);
           if (data.result === "error") {
-            $('#alert-wrapper').html(alert_markup('danger', data.message));
+            alert(data.message);
           } else {
-            $('#alert-wrapper').html('');
+           alert(data.message);
             // $('#rsvp-modal').modal('show');
           }
       }).fail(function (data) {
-          console.log(data);
-          $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. '));
+          // console.log(data);
+          alert(data.message);
         });
     }
   });
@@ -118,10 +118,10 @@ $(document).ready(function () {
 //     });
 // }
 
-// alert_markup
-function alert_markup(alert_type, msg) {
-  return '<div class="alert alert-' + alert_type + '" role="alert">' + msg + '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span>&times;</span></button></div>';
-}
+// // alert_markup
+// function alert_markup(alert_type, msg) {
+//   return '<div class="alert alert-' + alert_type + '" role="alert">' + msg + '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span>&times;</span></button></div>';
+// }
 
 // MD5 Encoding
 var MD5 = function (string) {
