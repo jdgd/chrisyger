@@ -59,12 +59,9 @@ $(document).ready(function () {
     e.preventDefault();
     var data = $(this).serialize();
 
-    $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
-
     if (MD5($('#invite_code').val()) !== 'e36035470975eff1f34db51f93e02fca'
       && MD5($('#invite_code').val()) !== '8015dcb321b5bf60431612df2ded58a4') {
-      // $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
-      alert('wawawah');
+      showSnack('<strong>Sorry!</strong> Your invite code is incorrect.');
     } else {
       $.ajax({
         url: "https://script.google.com/macros/s/AKfycbwL63-r_7gRbuRXPJH3Np4ATgQA-eGapQkefjJLo0B4deqMbUUe537e2bRLAAvMm8zH/exec",
@@ -73,20 +70,30 @@ $(document).ready(function () {
       }).success(function () {
        // console.log(data);
           if (data.result === "error") {
-            alert(data.message);
+            showSnack(data.message);
           } else {
-           alert(data.message);
-            // $('#rsvp-modal').modal('show');
+           showSnack(data.message);
+
           }
       }).fail(function (data) {
           // console.log(data);
-          alert(data.message);
+          showSnack(data.message);
         });
     }
   });
 
 });
 
+function showSnack(message) {
+  // Get the snackbar DIV
+  var x = $("#snackbar");
+
+  // Add the "show" class to DIV
+  x.addClass("show");
+  x.html("message")
+  // After 3 seconds, remove the show class from DIV
+  setTimeout(function(){ x.removeClass('show'); }, 3000);
+}
 /********************** Extras **********************/
 
 // // Google map
@@ -118,10 +125,6 @@ $(document).ready(function () {
 //     });
 // }
 
-// // alert_markup
-// function alert_markup(alert_type, msg) {
-//   return '<div class="alert alert-' + alert_type + '" role="alert">' + msg + '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span>&times;</span></button></div>';
-// }
 
 // MD5 Encoding
 var MD5 = function (string) {

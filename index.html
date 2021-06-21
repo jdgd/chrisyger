@@ -349,7 +349,7 @@
           </div>
           <div class="cell">
             <label>Código de invitación
-              <input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder=""
+              <input type="text" pattern="integer" name="invite_code" id="invite_code" class="" min="0" placeholder=""
                      required>
             </label>
           </div>
@@ -375,6 +375,7 @@
     </div>
   </div>
 </div>
+<div id="snackbar"></div>
 <script src="js/app.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
