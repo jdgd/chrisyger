@@ -98,7 +98,7 @@ ol > li > p {
   padding: 1rem;
 }
 
-#mapa {
+.mapa {
   margin-top: 0;
   height: 100%;
 }
@@ -123,7 +123,7 @@ ol > li > p {
   }
 
 #top-section {
-  background: #bababb url('../img/PAG_BODA-13.jpg') no-repeat fixed center center;
+  background: #bababb url('../img/header.jpg') no-repeat fixed center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -326,7 +326,7 @@ ol > li > p {
     border-right: 1px solid #D88880;
   }
 
-  #mapa {
+  .mapa {
     height: 275px;
   }
 
@@ -359,8 +359,10 @@ ol > li > p {
 
 /* Large and up */
 @media screen and (min-width: 64em) {
-  #mapa {
+  .mapa {
     margin-top: 8rem;
+    width: 100%;
+    height: auto;
   }
   #sobre {
   background: #A56051 url('../img/nueva_fecha.jpg') center center no-repeat;
