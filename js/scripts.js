@@ -69,6 +69,9 @@ $(document).ready(function () {
       $.ajax({
         url: "https://script.google.com/macros/s/AKfycbwlxOMuvlGN5-L7u-JrlSCBiYh9WafdRNB_eo-rZ1WHseJ9AJgegyJWQwbjWYPxJoLR/exec",
         data: data,
+        async:true,
+        dataType : 'jsonp',   //you may use jsonp for cross origin request
+        crossDomain:true,
         method: "POST",
       }).done(function () {
        console.log(data);
