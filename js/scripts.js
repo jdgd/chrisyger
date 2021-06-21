@@ -71,8 +71,9 @@ $(document).ready(function () {
        // console.log(data);
           if (data.result === "error") {
             showSnack(data.message);
+            alert("")
           } else {
-           showSnack(data.message);
+           showSnack("Gracias!");
 
           }
       }).fail(function (data) {
