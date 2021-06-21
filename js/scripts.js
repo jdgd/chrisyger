@@ -69,7 +69,7 @@ $(document).ready(function () {
       $.ajax({
         url: "https://script.google.com/macros/s/AKfycbz45JKZbRzq30z5xxm7ib1skm0C0Au0kObVzhU2pm_6rjAFs_E/exec",
         data: data,
-        method: "POST",
+        method: "GET",
       }).done(function () {
        console.log(data);
           if (data.result === "error") {
