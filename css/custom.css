@@ -105,7 +105,7 @@ ol > li > p {
 
 
   #sobre {
-    background: #A56051 url('../img/nueva_fecha.jpg') left center no-repeat;
+    background: #A56051 url('../img/sobre_s.jpg') left center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -114,7 +114,7 @@ ol > li > p {
   }
 
   #sobre-en {
-    background: #A56051 url('../img/nueva_fecha.jpg') left center no-repeat;
+    background: #A56051 url('../img/sobre_s.jpg') left center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -123,7 +123,7 @@ ol > li > p {
   }
 
 #top-section {
-  background: #bababb url('../img/header.jpg') no-repeat fixed center center;
+  background: linear-gradient(121deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 49%, rgba(255, 255, 255, 0.1) 100%), url('../img/header.jpg') no-repeat fixed center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -355,6 +355,23 @@ ol > li > p {
 
 /* Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    #sobre {
+  background: #A56051 url('../img/sobre_m.jpg') center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 500px;
+}
+
+#sobre-en {
+  background: #A56051 url('../img/sobre_m.jpg') center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 500px;
+}
 }
 
 /* Large and up */
