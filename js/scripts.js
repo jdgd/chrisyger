@@ -70,13 +70,13 @@ $(document).ready(function () {
         url: "https://script.google.com/macros/s/AKfycbwL63-r_7gRbuRXPJH3Np4ATgQA-eGapQkefjJLo0B4deqMbUUe537e2bRLAAvMm8zH/exec",
         data: data,
         method: "POST",
-      }).done(function () {
+      }).success(function () {
        console.log(data);
           if (data.result === "error") {
             $('#alert-wrapper').html(alert_markup('danger', data.message));
           } else {
             $('#alert-wrapper').html('');
-            $('#rsvp-modal').modal('show');
+            // $('#rsvp-modal').modal('show');
           }
       }).fail(function (data) {
           console.log(data);
