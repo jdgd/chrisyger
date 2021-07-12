@@ -291,66 +291,14 @@
           <div style="text-transform: uppercase; line-height: 42px; height: 42px; display: inline-block">
             See you soon!
           </div>
-          <button type="button" class="button hollow secondary no-margin" data-open="rsvpModal">RSVP</button>
+
 
         </div>
       </section>
     </div>
 
 
-    <div class="reveal large padding-1 bold" id="rsvpModal" data-reveal>
-      <p class="lead text-center texto-blanco bold h4">
-        What are you waiting for?
-      </p>
-      <p class="text-center texto-blanco bold">
-        We would greatly appreciate if you could RSVP before September 1st, 2020
-      </p>
-      <form id="rsvp-form" class="rsvp-form"
-            action=""
-            method="POST" novalidate data-abide>
-        <div class="grid-x grid-padding-x large-up-2 large-centered">
-          <div class="cell">
-            <label>Name
-              <input type="text" name="name" class="" placeholder="" required>
-            </label>
 
-          </div>
-          <div class="cell">
-            <label>e-mail
-              <input type="email" name="email" class="" pattern="email" placeholder="" required>
-            </label>
-          </div>
-          <div class="cell">
-            <label>How many people are you going to bring?
-              <input type="number" name="extras" class="" min="0" max="4" placeholder="" required>
-            </label>
-          </div>
-          <div class="cell">
-            <label>Invite Code
-              <input type="text" pattern="integer" name="invite_code" id="invite_code" class="" min="0" placeholder=""
-                     required>
-            </label>
-          </div>
-           <div class="cell">
-            <fieldset>
-              <legend class="texto-blanco">Are you coming?</legend>
-              <input type="radio" name="going" value="Si" id="pokemonRed" required><label
-              for="pokemonRed">Yes</label>
-              <input type="radio" name="going" value="No" id="pokemonBlue"><label for="pokemonBlue">No</label>
-            </fieldset>
-          </div>
-        </div>
-
-        <br>
-        <button class="expanded button hollow secondary no-margin rsvp-btn">
-          RSVP
-        </button>
-      </form>
-
-      <button class="close-button" data-close aria-label="Close modal" type="button">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
   </div>
 </div>
 <div id="snackbar"></div>

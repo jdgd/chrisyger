@@ -96,7 +96,7 @@
         <div class="grid-x texto-negro" id="sobre">
           <div class="cell small-5"></div>
           <div class="cell small-7">
-            <div class="grid-x">
+            <div class="grid-x texto-blanco">
               <div class="cell medium-4 text-uppercase sobre-content hide-for-small-only">
                 <div>
                   <p class="h4 no-margin">Nuestra <br class="show-for-medium">Boda</p>
@@ -140,8 +140,8 @@
                 <!--                          frameborder="0" style="border:0;" allowfullscreen=""></iframe>-->
                 <!--                </div>-->
                 <a href="https://goo.gl/maps/qXEpVTxKAQANsRPR7" target="_blank">
-                  <img class="mapa show-for-large" alt="" src="img/mapa_bonito.jpg">
-                  <img class="mapa hide-for-large" alt="" src="img/mapita.jpg" style="width: 100%">
+                  <img class="mapa show-for-medium" alt="" src="img/mapa_bonito.jpg">
+                  <img class="mapa hide-for-medium" alt="" src="img/mapita.jpg" style="width: 100%">
                 </a>
 
                 <span class="texto-negro show-for-medium">Carretera Federal Cuernavaca Cuautla km32, Localidad Los Arcos, Yautepec, Morelos.</span>
@@ -158,7 +158,7 @@
           <div class="grid-container">
             <div class="grid-x">
               <div class="cell medium-6 text-center" id="vest-m">
-          <span class="texto-narnja text-uppercase bold">
+          <span class="texto-narnja text-uppercase bold h5">
             Mujeres
           </span><br><br>
                 <span class="h5">
@@ -174,7 +174,7 @@
                 <hr class="vhr">
               </div>
               <div class="cell medium-6 text-center">
-          <span class="texto-narnja text-uppercase bold">
+          <span class="texto-narnja text-uppercase bold h5">
             Hombres
           </span><br><br>
                 <span class="h5">
@@ -310,70 +310,18 @@
         <div id="rsvp-content">
 
           <img alt="" src="img/cyg.png" class="firmas"><br><br>
-          <div style="text-transform: uppercase; line-height: 42px; height: 42px; display: inline-block">
+          <div style="text-transform: uppercase; line-height: 42px; height: 42px; display: inline-block; font-size: 22px">
             ¡Nos vemos pronto!
           </div>
-          <button type="button" class="button hollow secondary no-margin" data-open="rsvpModal" id="btn-rsvp">RSVP
-          </button>
+<!--          <button type="button" class="button hollow secondary no-margin" data-open="rsvpModal" id="btn-rsvp">RSVP-->
+<!--          </button>-->
 
         </div>
       </section>
     </div>
 
 
-    <div class="reveal large padding-1 bold" id="rsvpModal" data-reveal>
-      <p class="lead text-center texto-blanco bold">
-        Confirma tu asistencia!
-      </p>
-      <p class="texto-blanco text-center bold">
-        Nos ayudarías mucho que fuera antes del 1 de Septiembre de 2021.
-      </p>
-      <form id="rsvp-form" class="rsvp-form"
-            action=""
-            method="POST" novalidate data-abide>
-        <div class="grid-x grid-padding-x large-up-2 align-center">
-          <div class="cell">
-            <label>Nombre
-              <input type="text" name="name" class="" placeholder="" required>
-            </label>
 
-          </div>
-          <div class="cell">
-            <label>e-mail
-              <input type="email" name="email" class="" pattern="email" placeholder="" required>
-            </label>
-          </div>
-          <div class="cell">
-            <label>Personas
-              <input type="number" name="extras" class="" min="0" max="4" placeholder="" required>
-            </label>
-          </div>
-          <div class="cell">
-            <label>Código de invitación
-              <input type="text" pattern="integer" name="invite_code" id="invite_code" class="" min="0" placeholder=""
-                     required>
-            </label>
-          </div>
-          <div class="cell text-center">
-            <label class="texto-blanco">¿Asistirás?</label>
-            <fieldset>
-              <input type="radio" name="going" value="Si" id="pokemonRed" required><label
-              for="pokemonRed">Si</label>
-              <input type="radio" name="going" value="No" id="pokemonBlue"><label for="pokemonBlue">No</label>
-            </fieldset>
-          </div>
-        </div>
-        <br>
-
-        <button class="expanded button hollow secondary no-margin rsvp-btn">
-          Confirmar
-        </button>
-      </form>
-
-      <button class="close-button" data-close aria-label="Close modal" type="button">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
   </div>
 </div>
 <div id="snackbar"></div>
