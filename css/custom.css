@@ -259,27 +259,27 @@ ol > li > p {
 .firmas {
   max-width: 450px;
 }
-
+#inv-sm{
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
 /* Small only */
 @media screen and (max-width: 39.9375em) {
 
-  #sobre {
-    background: #A56051 url('../img/sobre_s.jpg') left center no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 741px;
+  #sobre, #sobre-en {
+    background: none;
+    /*background: #A56051 url('../img/inv.jpg') left center no-repeat;*/
+    /*-webkit-background-size: contain;*/
+    /*-moz-background-size: contain;*/
+    /*-o-background-size: contain;*/
+    /*background-size: contain;*/
+
   }
 
-  #sobre-en {
-    background: #A56051 url('../img/sobre_s.jpg') left center no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 741px;
-  }
+
 
   .firmas {
     max-width: 360px;
