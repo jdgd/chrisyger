@@ -106,7 +106,7 @@ ol > li > p {
 
 
 #top-section {
-  background: linear-gradient(121deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 49%, rgba(255, 255, 255, 0.1) 100%), url('../img/header.jpg') no-repeat fixed center center;
+  background: linear-gradient(121deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 49%, rgba(255, 255, 255, 0.1) 100%), url('../img/header.jpg') no-repeat scroll center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -126,7 +126,7 @@ ol > li > p {
 
 #rsvp {
   position: relative;
-  background: linear-gradient(121deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 49%, rgba(255, 255, 255, 0.1) 100%), url('../img/fotofinalc.jpg') right center fixed no-repeat;
+  background: linear-gradient(121deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 49%, rgba(255, 255, 255, 0.1) 100%), url('../img/fotofinalc.jpg') right center scroll no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -244,7 +244,7 @@ ol > li > p {
 }
 
 #imagen-arco {
-  background: #6F634B url("../img/PAG_BODA-04.jpg") no-repeat center center fixed;
+  background: #6F634B url("../img/PAG_BODA-04.jpg") no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -298,7 +298,7 @@ ol > li > p {
 
   #rsvp {
 
-    background: linear-gradient(121deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url('../img/fotofinalm2.jpg') center center fixed no-repeat;
+    background: linear-gradient(121deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url('../img/fotofinalm2.jpg') center center scroll no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -323,6 +323,13 @@ ol > li > p {
 
 /* Medium and up */
 @media screen and (min-width: 40em) {
+  #imagen-arco {
+  background: #6F634B url("../img/PAG_BODA-04.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
   #vest-m {
     border-right: 1px solid #D88880;
   }
@@ -352,6 +359,20 @@ ol > li > p {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  #top-section {
+  background: linear-gradient(121deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 49%, rgba(255, 255, 255, 0.1) 100%), url('../img/header.jpg') no-repeat fixed center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 1rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
 }
 
 /* Medium only */
