@@ -212,7 +212,9 @@ ol > li > p {
 .texto-narnja {
   color: #D88880;
 }
-
+.fondo-narnja, #mesa{
+  background-color: #D88880;
+}
 .vhr {
   border: none;
   border-left: 1px solid #D88880;
