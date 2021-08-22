@@ -252,6 +252,13 @@ ol > li > p {
   -o-background-size: cover;
   background-size: cover;
 }
+#imagen-col {
+  background: #6F634B url("../img/bg-69.jpg") no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 
 .off-canvas {
@@ -318,8 +325,9 @@ ol > li > p {
     z-index: 5;
   }
 
-  #imagen-arco {
+  #imagen-arco,#imagen-col {
     min-height: 100vh;
+
   }
 }
 
@@ -327,6 +335,13 @@ ol > li > p {
 @media screen and (min-width: 40em) {
   #imagen-arco {
   background: #6F634B url("../img/PAG_BODA-04.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+    #imagen-col {
+  background: #6F634B url("../img/bg-69.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
